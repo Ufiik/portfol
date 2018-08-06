@@ -1,0 +1,33 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+.link-button {
+  padding: 20px 30px;
+  transition: all ease 200ms;
+}
+
+.link-button_theme-white {
+  background-color: $main-white;
+  box-shadow: $button-shadow;
+}
+
+.link-button_hover {
+  &:hover {
+    background-color: $main-white;
+    box-shadow: $button-shadow;
+    border: none;
+  }
+}
+
+.link-button_theme-transparent {
+  background-color: transparent;
+  border: 1px solid $main-dark;
+}
+
+.link-button_text {
+  text-transform: uppercase;
+  font-family: $Asap;
+  font-weight: 500;
+  letter-spacing: 0.96px;
+  color: $main-dark;
+}
