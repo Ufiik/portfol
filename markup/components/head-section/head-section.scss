@@ -2,13 +2,11 @@
   background-image: url("__static__assets/head-section/bg_head_section.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 750px;
 }
 
 .head-container {
   position: relative;
   padding-top: 31px;
-  height: 100%;
 }
 
 .header {
@@ -53,6 +51,10 @@
   letter-spacing: 2.04px;
 }
 
+.nav {
+  transition: all ease 200ms;
+}
+
 .nav__list {
   @include nl;
   display: flex;
@@ -80,21 +82,19 @@
 }
 
 .head-banner {
-  height: 100%;
   position: relative;
 }
 
 .head-banner__caption {
   position: absolute;
-  top: 30%;
-  transform: translateY(-30%);
+  top: 45%;
+  transform: translateY(-45%);
 }
 
 .head-banner__pic {
-  right: 0;
-  position: absolute;
-
+  @include cf;
   img {
+    float: right;
     height: auto;
     max-width: 100%;
   }
@@ -122,4 +122,108 @@
   &:last-child {
     margin-right: 0;
   }
+}
+
+@media (max-width: 1300px) {
+  .head-banner__h1 {
+    font-size: 70px;
+  }
+
+  .head-banner__p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .head-banner__h1 {
+    font-size: 50px;
+  }
+
+  .head-banner__p {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 999px) {
+  .head-banner {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .head-banner__caption {
+    position: static;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+  .head-banner__pic {
+    img {
+      float: left;
+    }
+  }
+
+  .nav {
+    height: 100vh;
+    position: fixed;
+    right: -400px;
+    bottom: 0;
+    top: 0;
+    z-index: 998;
+    background-color: $main-dark;
+    width: 200px;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .nav__item {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .nav__link {
+    color: $main-white;
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 430px) {
+  .head-banner__button {
+    text-align: center;
+    display: block;
+    margin: 20px auto 0 auto;
+    max-width: 170px;
+
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin: 20px auto 0 auto;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .head-banner__h1 {
+    font-size: 40px;
+  }
+
+  .head-banner__p {
+    font-size: 14px;
+  }
+}
+
+
+.nav_active {
+  right: 0;
 }

@@ -1,0 +1,25 @@
+include ../caption/caption.pug
+
+mixin services(data)
+    .services
+        .services-container.container
+            +caption('services')
+            .services-pictures
+                .services-pictures__item
+                    .services-pictures__pic.research
+                    span.services-pictures__text User Research
+                .services-pictures__item
+                    .services-pictures__pic.wireframes
+                    span.services-pictures__text IA And Wireframes
+                .services-pictures__item
+                    .services-pictures__pic.driver
+                    span.services-pictures__text User Testing
+                .services-pictures__item
+                    .services-pictures__pic.layers
+                    span.services-pictures__text Looks and Feel Design (UI)
+                .services-pictures__item
+                    .services-pictures__pic.list
+                    span.services-pictures__text Delivery
+                .services-pictures__item
+                    .services-pictures__pic.electric
+                    span.services-pictures__text Integration Support

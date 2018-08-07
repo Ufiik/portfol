@@ -2,7 +2,11 @@ doctype html
 html(class="no-js", lang="ru")
 
     include ../components/head/head.pug
+    include ../components/hamburger/hamburger.pug
+
     include ../components/head-section/head-section.pug
+    include ../components/section-about/section-about.pug
+    include ../components/services/services.pug
 
 
     head
@@ -10,8 +14,11 @@ html(class="no-js", lang="ru")
     body.page
         |%=symbols=%
 
-        .wrapper 
+        .wrapper
+            +hamburger()
             +head-section()
+            +section-about()
+            +services()
 
 
 

@@ -4,6 +4,7 @@
 .link-button {
   padding: 20px 30px;
   transition: all ease 200ms;
+  display: inline-block;
 }
 
 .link-button_theme-white {
@@ -30,4 +31,9 @@
   font-weight: 500;
   letter-spacing: 0.96px;
   color: $main-dark;
+}
+
+.link-button_broad {
+  padding-left: 47px;
+  padding-right: 47px;
 }

@@ -1,50 +1,26 @@
 mixin head-section(data)
-
     section.head-section
-
         .head-container.container
-
             header.header
-
                 .logo
-
                   .logo__pic
                       i.fab.fa-first-order-alt
-
                   span.logo__caption OENRIQUE
-
                   span.logo__desc UX/UI EXPERT
-
-
                 nav.nav
-
                     ul.nav__list
-
                         -var navLinks = ['home', 'about', 'service', 'portfolio', 'contact'];
                         each navLink in navLinks
-
                           li.nav__item
-
                               a.nav__link(href="#")= navLink
-
             .head-banner
-
               .head-banner__pic
-
                   img(src="__static__img/assets/head-section/img_face.png")
-
               .head-banner__caption
-
                   h1.head-banner__h1 Luis Oenrique
-
                   p.head-banner__p User Experience / User Interface Expert
-
                   .head-banner__buttons
-
                       a(href="#").head-banner__button.link-button.link-button_theme-transparent.link-button_hover
-
                         span.link-button_text KNOW MORE
-
                       a(href="#").head-banner__button.link-button.link-button_theme-transparent.link-button_hover
-
                         span.link-button_text HIRE ME

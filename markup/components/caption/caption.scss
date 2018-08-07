@@ -1,0 +1,24 @@
+.caption {
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: #212121;
+    opacity: 0.6;
+    top: -19px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.caption__h5 {
+  opacity: 0.8;
+  letter-spacing: 5.52px;
+  font-size: 46px;
+  font-weight: 700;
+  text-transform: uppercase;
+}

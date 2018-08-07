@@ -1,0 +1,66 @@
+.services {
+  background-color: $section-bg;
+}
+
+.services-container {
+  padding-top: 142px;
+  padding-bottom: 25px;
+}
+
+.services-pictures {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.services-pictures__item {
+  width: 380px;
+  text-align: center;
+  margin-bottom: 88px;
+}
+
+.services-pictures__pic {
+  margin: 0 auto;
+}
+
+.services-pictures__text {
+  font-size: 24px;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 13px;
+  max-width: 200px;
+}
+
+.research {
+  @include bg-svg($research);
+}
+
+.wireframes {
+  @include bg-svg($wireframe);
+}
+
+.driver {
+  @include bg-svg($driver);
+}
+
+.layers {
+  @include bg-svg($layers);
+}
+
+.list {
+  @include bg-svg($list);
+}
+
+.electric {
+  @include bg-svg($electric);
+}
+
+@media (max-width: 799px) {
+  .services-pictures {
+    justify-content: center;
+  }
+}
