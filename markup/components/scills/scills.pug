@@ -1,0 +1,8 @@
+include ../caption/caption.pug
+
+mixin scills(data)
+    .scills
+        .scills-container.container
+            +caption('my scills')
+            .scills-chart
+                canvas#scills-chart__item
