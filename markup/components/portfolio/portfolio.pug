@@ -1,0 +1,13 @@
+include ../caption/caption.pug
+
+mixin portfolio(data)
+    .portfolio
+        .portfolio-container.container
+            +caption('portfolio')
+            .portfolio-picks
+                    each i in ['1','2','3','4','5','6']
+                        .portfolio-picks__item
+                            a(href="#").portfolio-picks__link
+                                img(src='__static__img/assets/portfolio/' + i + '.jpg')
+            a(href="#").link-button.link-button_theme-white
+                span.link-button_text LOAD MORE

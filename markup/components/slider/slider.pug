@@ -1,0 +1,19 @@
+include ../caption/caption.pug
+
+mixin slider(data)
+    .slider
+        .slider-container.container
+            +caption('clients')
+            .slides
+                each i in ['1','2','3']
+                    .slides-item
+                        .slides-item__container
+                            .slides-item__pic
+                                img(src='__static__img/assets/slider/img_.jpg')
+                            .slides-item__text
+                                .slides-item__tittle
+                                    h5 Limara tusi
+                                .slides-item__i
+                                    i CEO, RanDOM COMPANY
+                                .slides-item__p
+                                    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.

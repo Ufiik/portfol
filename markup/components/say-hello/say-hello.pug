@@ -1,0 +1,15 @@
+include ../caption/caption.pug
+
+mixin say-hello(data)
+    .say-hello
+        .say-hello-container.container
+            +caption('sAY HELLO!', 'caption_theme-white')
+            .form
+                form(action='#')
+                    .form__inputs
+                        input(type='text' placeholder='Name').form__name
+                        input(type='email' placeholder='Email').form__email
+                    textarea(placeholder="Message").form__textarea
+                    button(type="submit").link-button.link-button_theme-white
+                        span.link-button_text send
+            footer.footer

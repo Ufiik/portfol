@@ -1,3 +1,7 @@
-mixin caption(data)
-    .caption
-        h5.caption__h5= data
+mixin caption(data,mod)
+    if mod
+        div(class=mod).caption
+            h5.caption__h5= data
+    else
+        .caption
+            h5.caption__h5= data

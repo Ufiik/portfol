@@ -8,6 +8,10 @@ html(class="no-js", lang="ru")
     include ../components/section-about/section-about.pug
     include ../components/services/services.pug
     include ../components/scills/scills.pug
+    include ../components/portfolio/portfolio.pug
+    include ../components/slider/slider.pug
+    include ../components/info-work/info-work.pug
+    include ../components/say-hello/say-hello.pug
 
 
     head
@@ -21,9 +25,14 @@ html(class="no-js", lang="ru")
             +section-about()
             +services()
             +scills()
-
+            +portfolio()
+            +slider()
+            +info-work()
+            +say-hello()
 
         script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js')
         script(src='%=static=%js/separate-js/svg4everybody.min.js')
         script svg4everybody();
 

@@ -22,3 +22,13 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+
+.caption_theme-white {
+  &::before {
+    background-color: $main-white;
+  }
+
+  .caption__h5 {
+    color: $main-white;
+  }
+}
