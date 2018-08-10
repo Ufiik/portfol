@@ -10,6 +10,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     toTopBtn.addEventListener('click', function() {
-        scrollTo(0, 0);
+        toTop();
     });
+
+    function toTop() {
+        if (pageYOffset > 0) {
+            setTimeout(function () {
+                scrollTo(0, pageYOffset - 50);
+                toTop();
+            }, 10);
+        }
+    }
 });
